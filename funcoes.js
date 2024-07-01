@@ -31,7 +31,7 @@ function calculadora(){
      resultado = num1 - num2;
      break;
      case "3":
-        resultado = num1 * num2;
+     resultado = num1 * num2;
     
       
    }
