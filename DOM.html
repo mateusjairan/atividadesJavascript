@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body>
+    <h1>Títulp 1</h1>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, saepe!</p>
+
+    <p class="paragrafoClasse">Lorem ipsum dolor sit amet.</p>
+
+    <ul>
+        <li>Coisa</li>
+        <li>Coisa</li>
+        <li id="especial">Coisa</li>
+    </ul>
+
+    <div>
+        <h2>Título</h2>
+    </div>
+
+
+
+
+
+
+<script>
+    //mais generalista = tag
+    let paragrafos = document.getElementsByTagName("p")
+    let p = document.querySelector('p') // seleciona o primeiro elemento seletor indicado
+    let todosP = document.querySelectorAll('p')
+
+
+    let paragrafosComClasse = document.getElementsByClassName("paragrafoClasse")
+
+    let pClasse = document.querySelector(".paragrafoClasse")
+    let pClasse2 = document.querySelectorAll("paragrafoClasse")
+
+//
+    let item = document.getElementById("especial")
+//manipulação da propriedade CSS
+    item.style.color = 'red'
+//manipulação do conteudo da tapg
+    item.innerHTML = 'Mudei com Javascript'
+
+    let div = document.querySelector("div")
+
+    div.innerHTML += '<h3>Meu título 3 </h3>'
+
+
+
+
+</script>
+</body>
+</html>
